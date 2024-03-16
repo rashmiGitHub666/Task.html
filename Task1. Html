@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            background-color: #f0f0f0;
+
+        }
+
+
+
+        .container {
+
+            width: 80%;
+
+            margin: auto;
+
+            padding: 20px;
+
+        }
+
+
+
+        header {
+
+            background-color: #060108;
+
+            color: #fff;
+
+            text-align: center;
+
+            padding: 20px 0;
+
+            cursor: pointer;
+
+        }
+
+
+
+        header h1, header p {
+
+            margin: 0;
+
+        }
+
+
+
+        section {
+
+            display: none;
+
+            padding: 20px 0;
+
+        }
+
+
+
+        .active {
+
+            display: block;
+
+        }
+
+
+
+        footer {
+
+            background-color: #02020f;
+
+            color: #fff;
+
+            text-align: center;
+
+            padding: 20px 0;
+
+            position: fixed;
+
+            width: 100%;
+
+            bottom: 0;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header onclick="toggleSection('about')">
+
+        <div class="container">
+
+            <h1>Rashmi</h1>
+
+            <p>This is my official website</p>
+
+        </div>
+
+    </header>
+
+
+
+    <section id="about" class="active">
+
+        <div class="container">
+
+            <h2>About Me</h2>
+
+            <p>I am a passionate web developer. 
+
+                I love building responsive and user-friendly websites.</p>
+
+        </div>
+
+    </section>
+
+
+
+    <header onclick="toggleSection('skills')">
+
+        <div class="container">
+
+            <h2>Skills</h2>
+
+        </div>
+
+    </header>
+
+
+
+    <section id="skills">
+
+        <div class="container">
+
+            <ul>
+
+                <li>HTML5</li>
+
+                <li>CSS3</li>
+
+                <li>JavaScript</li>
+
+                <li>Responsive Design</li>
+
+                <li>Bootstrap</li>
+
+                <li>Git</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+
+    <header onclick="toggleSection('projects')">
+
+        <div class="container">
+
+            <h2>Projects</h2>
+
+        </div>
+
+    </header>
+
+
+
+    <section id="projects">
+
+        <div class="container">
+
+            <div class="project">
+
+                <h3>Project 1</h3>
+
+                <p>Did a project on html</p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>Project 2</h3>
+
+                <p>Project on css</p>
+
+            </div>
+
+            <div class="project2 on xyz">
+
+                <h3>Project 3</h3>
+
+                <p>Project in python</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <header onclick="toggleSection('contact')">
+
+        <div class="container">
+
+            <h2>Contact Me</h2>
+
+        </div>
+
+    </header>
+
+
+
+    <section id="contact">
+
+        <div class="container">
+
+            <p>Email: rasheg@example.com</p>
+
+            <p>Phone: 123-456-7890</p>
+
+        </div>
+
+    </section>
+
+
+
+    <script>
+
+        function toggleSection(sectionId) {
+
+            var sections = document.getElementsByTagName('section');
+
+            for (var i = 0; i < sections.length; i++) {
+
+                sections[i].classList.remove('active');
+
+            }
+
+            document.getElementById(sectionId).classList.add('active');
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+
