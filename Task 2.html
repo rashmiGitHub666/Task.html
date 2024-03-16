@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+        <h1>Netflix</h1>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+       
+         {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .search-bar input {
+            padding: 8px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hero button {
+            background-color: #e50914;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .featured {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .movie {
+            width: 25%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .movie:hover {
+            transform: translateY(-5px);
+        }
+
+        .movie img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .movie h3 {
+            background-color: #000;
+            color: #a84646;
+            padding: 10px;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #1d0303;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Netflix</h1>
+            <p>Watch unlimited movies and TV shows anytime, anywhere. Cancel anytime.</p>
+            <button>Sign Up</button>
+        </section>
+        <section class="featured">
+            <h2>Featured</h2>
+            <div class="movie">
+                <img src="RRR_9mi7FXL.png"alt="RRR">
+                
+            </div>
+            <div class="movie">
+                <img src="animal.jfif"alt="ANIMAL">
+               
+            </div>
+            <div class="movie">
+                <img src="kgf4.jpg" alt="KGF">
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Netflix Example</p>
+    </footer>
+</body>
+</html>
+
